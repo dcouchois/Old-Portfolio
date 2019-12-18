@@ -1,0 +1,37 @@
+body {
+
+}
+
+.background-image {
+    width: 100%;
+    position: absolute;
+}
+
+.main-content {
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 94%, 0.4);
+    padding: 2%;
+    width: 80%;
+    border: solid 2px black;
+    margin-top: 7%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.image-container {
+
+}
+
+.main-image{
+    border-radius: 15px;
+}
+
+.about-me {
+    margin-right: 10%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.main-body {
+    margin: 0 auto;
+}
