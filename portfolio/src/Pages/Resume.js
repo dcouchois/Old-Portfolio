@@ -1,16 +1,14 @@
 import React from "react";
-import Navbar from "../Components/Navbar/Nav";
-import BackgroundImg from "../images/background1.jpg";
+// import BackgroundImg from "../images/background1.jpg";
 import "./Home.css";
 
 
-function HomePage() {
+function Resume() {
     return (
         <div>
-            <Navbar />
-            <img className="background-image" src= {BackgroundImg} alt="cat"></img>
+            <h1>Hello World</h1>
         </div>
     )
 }
 
-export default HomePage;
+export default Resume;

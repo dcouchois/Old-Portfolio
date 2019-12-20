@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Components/Navbar/Nav";
 import ProfileImage from "../images/profile.jpg";
 import BackgroundImg from "../images/background1.jpg";
 import Col from 'react-bootstrap/Col';
@@ -11,7 +10,6 @@ import "./Home.css";
 function HomePage() {
     return (
         <div>
-            <Navbar />
             <img className="background-image" src= {BackgroundImg} alt="cat"></img>
             <div className="main-content">
                 <Row>
