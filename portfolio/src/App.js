@@ -7,7 +7,6 @@ import Resume from "./Pages/Resume";
 import Projects from "./Pages/Projects";
 
 
-
 function App() {
   return (
     <Router>

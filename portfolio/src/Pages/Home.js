@@ -1,8 +1,7 @@
 import React from "react";
 import ProfileImage from "../images/profile.jpg";
-import BackgroundImg from "../images/background1.jpg";
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import "./Home.css";
 
@@ -10,12 +9,15 @@ import "./Home.css";
 function HomePage() {
     return (
         <div>
-            <img className="background-image" src= {BackgroundImg} alt="cat"></img>
+            <div>
+                <h1 className="lat-text">33.979600</h1>
+                <h1 className="long-text">-117.727220</h1>
+            </div>
+            <div>
+                <p className="main-name">DILLON COUCHOIS</p>
+            </div>
             <div className="main-content">
-                <Row>
-                    <Col className="image-container" xs={6} md={4}>
-                        <Image className="main-image" src={ProfileImage} thumbnail />
-                    </Col>
+                <Row className="justify-content-md-center">
                     <Col className="main-body" xs={6} md={8}>
                         <h2 className="about-me">About Me</h2>
                         <p>Front-End Web Developer with a background in Photography and Design with a keen eye for detail. 

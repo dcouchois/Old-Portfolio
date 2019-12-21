@@ -1,20 +1,28 @@
 body {
-
+    background-color: black;
+    color: #ffffff;
 }
 
-.background-image {
-    width: 100%;
-    position: absolute;
-    margin-top: -7%;
+.lat-text{
+    margin-left: 2%;
+    font-size: 350%;
 }
+
+.long-text {
+    margin-left: 2%;
+    font-size: 350%;
+}
+
+.main-name{
+    font-size: 600%;
+    margin-left: 50%;
+}
+
 
 .main-content {
+    float: right;
     margin: 0 auto;
-    background-color: hsl(0, 0%, 94%, 0.4);
-    padding: 2%;
-    width: 80%;
-    border: solid 2px black;
-    margin-top: 7%;
+    width: 50%;
     border-radius: 10px;
     position: relative;
 }
@@ -30,7 +38,6 @@ body {
 .about-me {
     margin-right: 10%;
     text-align: center;
-    text-decoration: underline;
 }
 
 .main-body {

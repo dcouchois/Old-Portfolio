@@ -1,12 +1,12 @@
 import React from "react";
-// import BackgroundImg from "../images/background1.jpg";
-import "./Home.css";
+import BackgroundImg from "../images/background1.jpg";
+import "./Resume.css";
 
 
 function Resume() {
     return (
         <div>
-            <h1>Hello World</h1>
+            <img className="resume-image" src= {BackgroundImg} alt="cat"></img>
         </div>
     )
 }
