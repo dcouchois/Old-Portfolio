@@ -1,0 +1,15 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.bts-image {
+    margin: 2% 0% 0% 5%;
+    width: 30%;
+    float: left;
+}
+
+.bts-content {
+    float: right;
+    margin: 5% 20% 0% 0%;
+}

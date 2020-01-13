@@ -25,8 +25,11 @@ function HomePage() {
                             Recently received a certificate in Full Stack Development from the University of California Irvine in Javascript, CSS, React.js and responsive web design.
                             My aim is to bring a dynamic experience to each user accompanied by modern and compelling design. </p>
                         <p className="contact-title"> CONTACT </p>
-                            <Link to={dcResume} target="_blank" download className="c-btn">Resume </Link> | | 
-                            <a href="https://www.linkedin.com/in/dillon-couchois-45b2bb163/" className="c-btn"> LinkedIn</a>
+                            <Link to={dcResume} target="_blank" download className="c-btn"> Resume </Link>
+                             | | 
+                            <a href="https://www.linkedin.com/in/dillon-couchois-45b2bb163/" target="_blank" rel="noopener noreferrer" className="c-btn"> LinkedIn </a>
+                             | | 
+                            <a href="https://github.com/dcouchois" target="_blank" rel="noopener noreferrer" className="c-btn"> Github </a>
                     </Col>
                 </Row>
             </div>
