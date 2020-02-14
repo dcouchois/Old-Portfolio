@@ -4,12 +4,24 @@ body {
 }
 
 .bts-image {
-    margin: 2% 0% 0% 5%;
-    width: 30%;
+    width: 40%;
     float: left;
+    position: relative;
+    left: 5%;
+}
+
+.bts-title {
+    margin: 5% 0% 0% 8.5%;
+    padding-bottom: 1%;
+    font-size: 300%;
 }
 
 .bts-content {
     float: right;
-    margin: 5% 20% 0% 0%;
+    position: relative;
+    right: 15%;
+}
+
+.bts-image:hover {
+    opacity: 0.5;
 }

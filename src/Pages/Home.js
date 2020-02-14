@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import dcResume from "../images/resume.pdf";
 import ProfileImage from "../images/headshot.jpg";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Mailto from "react-protected-mailto";
 import "./Home.css";
 
 
 function HomePage() {
     return (
-        <div>
+        <div className="all-content">
             <div>
                 <h1 className="lat-text">33.979600</h1>
                 <h1 className="long-text">-117.727220</h1>
@@ -25,11 +25,19 @@ function HomePage() {
                             Recently received a certificate in Full Stack Development from the University of California Irvine in Javascript, CSS, React.js and responsive web design.
                             My aim is to bring a dynamic experience to each user accompanied by modern and compelling design. </p>
                         <p className="contact-title"> CONTACT </p>
-                            <Link to={dcResume} target="_blank" download className="c-btn"> Resume </Link>
+                            <a href={dcResume} target="_blank" rel="noopener noreferrer" className="c-btn"> Resume </a>
                              | | 
                             <a href="https://www.linkedin.com/in/dillon-couchois-45b2bb163/" target="_blank" rel="noopener noreferrer" className="c-btn"> LinkedIn </a>
                              | | 
                             <a href="https://github.com/dcouchois" target="_blank" rel="noopener noreferrer" className="c-btn"> Github </a>
+                             | |
+                            <p>
+                                Email: <Mailto className="c-btn"
+                                email = "dcouchois@gmail.com"
+                                headers = {
+                                    {subject: "No Subject"}
+                                }/>  
+                            </p> 
                     </Col>
                 </Row>
             </div>

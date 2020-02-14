@@ -1,21 +1,26 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from "./Components/Navbar/Nav";
+import React, { Component } from 'react';
+import { HashRouter, Route, NavLink } from "react-router-dom";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
+import "./App.css";
 
 
-function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/projects" component={Projects} />
-      </Switch>
-    </Router>
-  );
+class App extends Component {
+  render() {
+    return (
+      <HashRouter basename="/">
+        <div>
+          <div className="links">
+            <NavLink className="nav-link" to="/">Home</NavLink>
+            <NavLink className="nav-link" to="/Projects">Projects</NavLink>
+          </div>
+          <Route exact path="/" component={Home} />
+          <Route path="/Projects" component={Projects} />
+        </div>
+      </HashRouter>
+    );
+  }
 }
+
 
 export default App;
